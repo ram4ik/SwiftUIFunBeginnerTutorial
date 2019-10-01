@@ -10,7 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        VStack {
+            Text("SwiftUI").font(.title)
+            Text("Tutorial")
+            Image("one")
+                .clipShape(Circle())
+                .overlay(Circle().stroke(lineWidth: 3))
+                .shadow(radius: 18)
+                .padding()
+        }
     }
 }
 
